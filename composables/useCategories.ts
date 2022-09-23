@@ -22,6 +22,7 @@ export function useCategories() {
     }))
     .slice(0, 3),
   )
+  
   return {
     ...toRefs(state),
     fetchCategories,

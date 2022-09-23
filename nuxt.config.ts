@@ -4,7 +4,8 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   ssr: true,
   modules: [
-    ["@storyblok/nuxt", { accessToken: process.env.STORYBLOK_API_KEY }]
+    '@pinia/nuxt',
+    ["@storyblok/nuxt", { accessToken: process.env.STORYBLOK_API_KEY }],
     // ...
   ],
   buildModules: ['nuxt-windicss'],
